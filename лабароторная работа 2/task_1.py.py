@@ -4,10 +4,10 @@ spend = 6000  # Траты за первый месяц
 increase = 0.05  # Ежемесячный рост цен
 
 # TODO Посчитайте количество  месяцев, которое можно протянуть без долгов
-months = 0 # Счетчик месяцев
+months = 0  # Счетчик месяцев
 
-while money_capital + salary>spend:
+while money_capital + salary > spend:
     months += 1
-    money_capital +=salary - spend # Обновляем капитал
-    spend *= (1 + increase) # Увеличиваем траты на 5%
+    money_capital += salary - spend  # Обновляем капитал
+    spend *= (1 + increase)  # Увеличиваем траты на 5%
 print("Количество месяцев, которое можно протянуть без долгов:", months)
