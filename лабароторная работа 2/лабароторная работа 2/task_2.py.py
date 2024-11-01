@@ -1,3 +1,5 @@
+import math
+
 salary = 5000  # Ежемесячная зарплата
 spend = 6000  # Траты за первый месяц
 months = 10  # Количество месяцев, которое планируется протянуть без долгов
@@ -16,6 +18,7 @@ for _ in range(months):
     spend *= (1 + increase)
 
 # Округляем до целого числа
-total_needed_capital = int(total_needed_capital)
+total_needed_capital = math.ceil(total_needed_capital)
 
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов: {total_needed_capital}")
+
