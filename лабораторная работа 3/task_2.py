@@ -12,7 +12,7 @@ participants_second_group = "Петров,Сидоров,Смирнов"
 common_participants = find_common_participants(participants_first_group, participants_second_group)
 print(f"Общие участники: {common_participants}")
 
-# TODO Провеьте работу функции с разделителем отличным от запятой
+# TODO Проверьте работу функции с разделителем отличным от запятой
 participants_first_group = "Иванов|Петров|Сидоров"
 participants_second_group = "Петров|Сидоров|Смирнов"
 common_participants = find_common_participants(participants_first_group, participants_second_group, separator="|")
